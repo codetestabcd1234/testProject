@@ -1,0 +1,94 @@
+[debug] [2024-11-21T03:54:33.596Z] ----------------------------------------------------------------------
+[debug] [2024-11-21T03:54:33.598Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\VIC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-11-21T03:54:33.599Z] CLI Version:   13.26.0
+[debug] [2024-11-21T03:54:33.599Z] Platform:      win32
+[debug] [2024-11-21T03:54:33.599Z] Node Version:  v22.11.0
+[debug] [2024-11-21T03:54:33.599Z] Time:          Thu Nov 21 2024 10:54:33 GMT+0700 (Indochina Time)
+[debug] [2024-11-21T03:54:33.599Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-21T03:54:33.606Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-21T03:54:33.606Z] > authorizing via signed-in user (nguyenvanbaotest@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\ProectTest\WebAppEnglish\WebAppEnglish
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-11-21T03:54:38.766Z] Checked if tokens are valid: true, expires at: 1732164129056
+[debug] [2024-11-21T03:54:38.766Z] Checked if tokens are valid: true, expires at: 1732164129056
+[debug] [2024-11-21T03:54:38.767Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-11-21T03:54:39.446Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-11-21T03:54:39.446Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project baonguyen-3f6a7 (baonguyen) 
+[info] 
+=== Dataconnect Setup
+[debug] [2024-11-21T03:54:49.196Z] Checked if tokens are valid: true, expires at: 1732164129056
+[debug] [2024-11-21T03:54:49.196Z] Checked if tokens are valid: true, expires at: 1732164129056
+[debug] [2024-11-21T03:54:49.196Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/baonguyen-3f6a7/billingInfo [none]
+[debug] [2024-11-21T03:54:49.564Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/baonguyen-3f6a7/billingInfo 200
+[debug] [2024-11-21T03:54:49.564Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/baonguyen-3f6a7/billingInfo {"name":"projects/baonguyen-3f6a7/billingInfo","projectId":"baonguyen-3f6a7","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2024-11-21T03:54:49.565Z] Checked if tokens are valid: true, expires at: 1732164129056
+[debug] [2024-11-21T03:54:49.565Z] Checked if tokens are valid: true, expires at: 1732164129056
+[debug] [2024-11-21T03:54:49.565Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/baonguyen-3f6a7/services/sqladmin.googleapis.com [none]
+[debug] [2024-11-21T03:54:49.565Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/baonguyen-3f6a7/services/sqladmin.googleapis.com x-goog-quota-user=projects/baonguyen-3f6a7
+[debug] [2024-11-21T03:54:50.880Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/baonguyen-3f6a7/services/sqladmin.googleapis.com 200
+[debug] [2024-11-21T03:54:50.880Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/baonguyen-3f6a7/services/sqladmin.googleapis.com [omitted]
+[info] +  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] i  dataconnect\dataconnect.yaml is unchanged 
+[info] i  dataconnect\schema\schema.gql is unchanged 
+[info] i  dataconnect\connector\connector.yaml is unchanged 
+[info] i  dataconnect\connector\queries.gql is unchanged 
+[info] i  dataconnect\connector\mutations.gql is unchanged 
+[info] i  If you'd like to add the generated SDK to your app your, run firebase init dataconnect:sdk 
+[info] i  If you'd like to provision a CloudSQL Postgres instance on the Firebase Data Connect no-cost trial:
+1. Please upgrade to the pay-as-you-go (Blaze) billing plan. Visit the following page:
+     https://console.firebase.google.com/project/baonguyen-3f6a7/usage/details
+2. Run firebase init dataconnect again to configure the Cloud SQL instance.
+3. Run firebase deploy --only dataconnect to deploy your Data Connect service. 
+[info] 
+=== Hosting Setup
+[debug] [2024-11-21T03:54:50.886Z] Checked if tokens are valid: true, expires at: 1732164129056
+[debug] [2024-11-21T03:54:50.886Z] Checked if tokens are valid: true, expires at: 1732164129056
+[debug] [2024-11-21T03:54:50.886Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/baonguyen-3f6a7 [none]
+[debug] [2024-11-21T03:54:51.327Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/baonguyen-3f6a7 200
+[debug] [2024-11-21T03:54:51.327Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/baonguyen-3f6a7 {"projectId":"baonguyen-3f6a7","projectNumber":"423629044741","displayName":"baonguyen","name":"projects/baonguyen-3f6a7","resources":{"hostingSite":"baonguyen-3f6a7"},"state":"ACTIVE","etag":"1_a33efb94-ffd5-420f-ac6d-e48437d534ec"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-11-21T03:55:14.708Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-11-21T03:55:14.845Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-11-21T03:55:14.845Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.0.2","browserURL":"https://www.gstatic.com/firebasejs/11.0.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.0.2/firebase.tgz"},"live":{"version":"11.0","browserURL":"https://www.gstatic.com/firebasejs/live/11.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.0/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.0.2/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.0.2/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.0.2/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.0.2/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.0.2/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.0.2/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.0.2/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.0.2/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.0.2/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.0.2/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.0.2/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.0.2/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.memory.js"}}
+[info] i  public/index.html is unchanged 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming E:\ProectTest\WebAppEnglish\WebAppEnglish is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=625367894&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-11-21T03:55:15.811Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-11-21T03:55:15.812Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-11-21T03:55:16.295Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-11-21T03:55:16.295Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-11-21T03:55:16.299Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-11-21T03:55:17.055Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-11-21T03:55:17.055Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"codetestabcd1234","id":157790022,"node_id":"U_kgDOCWevRg","avatar_url":"https://avatars.githubusercontent.com/u/157790022?v=4","gravatar_id":"","url":"https://api.github.com/users/codetestabcd1234","html_url":"https://github.com/codetestabcd1234","followers_url":"https://api.github.com/users/codetestabcd1234/followers","following_url":"https://api.github.com/users/codetestabcd1234/following{/other_user}","gists_url":"https://api.github.com/users/codetestabcd1234/gists{/gist_id}","starred_url":"https://api.github.com/users/codetestabcd1234/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/codetestabcd1234/subscriptions","organizations_url":"https://api.github.com/users/codetestabcd1234/orgs","repos_url":"https://api.github.com/users/codetestabcd1234/repos","events_url":"https://api.github.com/users/codetestabcd1234/events{/privacy}","received_events_url":"https://api.github.com/users/codetestabcd1234/received_events","type":"User","user_view_type":"private","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":0,"public_gists":0,"followers":0,"following":0,"created_at":"2024-01-26T08:05:42Z","updated_at":"2024-11-21T03:50:27Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":0,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as codetestabcd1234 
+[info] 
